@@ -16,6 +16,6 @@ var respuesta= prompt("ELIGE UNA LETRA");
 
     if (respuesta!=solucion) {
       alert(" PRUEBA OTRA LETRA");
-    }else if (respuesta=solucion) {
+    }else (respuesta=solucion) {
       alert("ACERTASTE");
     }
