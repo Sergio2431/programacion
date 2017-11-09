@@ -15,11 +15,29 @@ var palabra_aleatorio=palabras[aleatorio];
 document.write(palabra_aleatorio);
 
 alert ("Bienvenido al Ahorcado!! Disfruta del juego!");
-var respuesta= prompt("Elige una letra!!");
 
+//contador
+var intentos=5;
+var error=1;
 
-while (isNaN(letra)==true) {
-  respuesta= prompt("Error, has elegido un número, elige una letra por favor!")
-} while (letra!=respuesta) {
-  respuesta= prompt ("Lo siento, la letra no es correcta")
+//Busqueda de la palabra
+var palabra=[];
+for (let i = 0; i <=palabra.length; i++) {
+  palabra[i]="_";
+}
+var pregunta=true;
+var error=false;
+
+while (intentos>cont && preguntar==true) {
+  var letra==prompt ("Elige una letra");
+  while (isNaN(letra)==false) {
+    letra=prompt("Error, elige una letra")
+  }
+
+  //Añadimos la letra encontrada
+  for (var i = 0; i <= palabra.length; i++) {
+  if (letra==adivinar.charAt(i)){
+      palabra[i]==letra;
+      error=true;
+  }
 }
