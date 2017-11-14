@@ -3,28 +3,27 @@
 *Actuividad: Ahorcado
 */
 
-//Inicializacion de variables
+//Buscamos una letra aleatoria
+var numA= Math.round(Math.random()* (122-97)) +97;
+console.log(numA);
 
-var letra;
-
-("BIENVENIDO AL AHORCADO!!")
-
-letra=prompt("ELIJA UNA LETRA PARA ENCONTRAR LA PALABRA")
-
+//conertir letra aleatoria
+var letra="";
+letra=String.fromCharCode(numA);
 console.log(letra);
 
-while (isNaN(letra)==true) {
-num=prompt("ERROR. HA ELEGIDO UN NUMERO, ELIJA UNA LETRA")
+//Bienvenida al Juego
+alert ("Bienvenido al Ahorcado!!")
+
+//pedir letra al jugador
+var letraIntro= prompt("Adivina la letra");
+
+//Bucle
+while (isNaN(letraIntro)==false) {
+  letraIntro=prompt ("Has introducido un número, introduce una letra como se pide, Josep");
 }
-
-while (letra!=respuesta) {
-num=prompt("LO SIENTO, LA LETRA NO ES CORRECTA")
-}
-
-
-//y=parseInt(y)
-
-for(var letra=respuesta) {
-  letra=respuesta;
-  document.write(lera"="respusta);
+if (letra==letraIntro) {
+  alert ("Acertaste!!");
+}else {
+  alert ("La letra no es correcta, elige otra letra nueva");
 }
