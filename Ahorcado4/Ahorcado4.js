@@ -11,6 +11,9 @@ console.log(numAle);
 var acertar=palabras[numAle];
 console.log(acertar);
 
+var divs = document.getElementsByTagName("div");
+console.log(divs.length);
+
 alert("Bienvendo al Ahorcado! Disfruta del juego!");
 alert("Intenta acertar la palabra con 5 intentos");
 
