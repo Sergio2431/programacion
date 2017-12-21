@@ -6,9 +6,16 @@
   </head>
   <body>
     <div id="primerDiv">
-      <h1>Bienvenido al Ahorcado</h1>
-      <p>Tienes 5 intentos para adivinar la palabra. Suerte!</p>
-    </div>  
+      <center><h1>Bienvenido al Ahorcado</h1></center>
+      <center><p>Tienes 5 intentos para adivinar la palabra. Suerte!</p></center>
+    </div>
+    <div class="content">
+      <center><input type="text" id="casilla" value="" readonly></center>
+    </div><br>
+    <div class="content">
+      <center><input type="button" id="Enviar" value="Enviar" onclick="sacarValor()"></center><br>
+      <center><input type="button" id="Pista" value="Pista" onclick="sacarValor()"></center>
+    </div>
     <script type="text/javascript" src="Ahorcado4.js"></script>
   </body>
 </html>

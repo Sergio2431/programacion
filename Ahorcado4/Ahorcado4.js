@@ -26,3 +26,9 @@ var fallo="";
 //contador de fallos
 var intentos=5;
 var cont=0;
+while (intentos>cont && barrabaja!=0) {
+
+}
+while (isNaN(letra)==false) {
+
+}
