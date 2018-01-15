@@ -9,14 +9,14 @@
       <center>
       <h3>Figura 1: Muy muy sencilla</h3>
     <?php
-      $x=1;
-      $y=1;
-      while ($x<=5) {
+      $i=1;
+      $j=1;
+      while ($i<=5) {
         echo "*";
       }
       echo "<br>"
     }
-  $x++;
+  $i++;
 }
     ?>
     </center>
@@ -46,6 +46,43 @@
         }
        ?>
      </center>
+    </div>
+    <div class="figura4">
+      <center>
+      <h3>Figura 4: Normal</h3>
+      <<?php
+      for ($i=0; $i <= 2; $i++) {
+        echo "*";
+      for ($j=1; $j <= ($i*2); $j++) {
+        echo "*";
+      }
+        echo "<br>";
+      }
+      for ($i=2; $i > 1; $i--) {
+        echo "*";
+      for ($j=2; $j >= 1; $j--) {
+        echo "*";
+      }
+        echo "<br>";
+      }
+        echo "*"."<br>";
+      ?>
+    </div>
+    <div class="figura5">
+      <center>
+      <h3>Figura 5: Normal</h3>
+      <?php
+      $aux=1;
+      for ($i=0; $i<4;$i++) {
+      for ($j=0; $j<$aux;$j++) {
+      echo "*";
+      }
+      if($aux<7){
+      $aux=$aux+2;
+      }
+      echo "<br>";
+      }
+       ?>
     </div>
   </body>
 </html>
