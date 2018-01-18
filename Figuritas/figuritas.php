@@ -12,12 +12,9 @@
       $i=1;
       $j=1;
       while ($i<=5) {
-        echo "*";
-      }
-      echo "<br>"
+        echo "*"."<br>";
+        $i++;
     }
-  $i++;
-}
     ?>
     </center>
     </div>
@@ -25,11 +22,11 @@
       <center>
       <h3>Figura 2: Sencilla</h3>
       <?php
-        for ($i=1; $i <= 7; $i++) {
-          for ($j=1; $j <= $i; $j++) {
+        for ($i=1; $i <= 5; $i++) {
+          for ($j=1; $j <= 5; $j++) {
             echo "*";
           }
-          echo "<br>"
+          echo "<br>";
         }
        ?>
      </center>
@@ -60,8 +57,8 @@
       }
       for ($i=2; $i > 1; $i--) {
         echo "*";
-      for ($j=2; $j >= 1; $j--) {
-        echo "*";
+        for ($j=2; $j >= 1; $j--) {
+          echo "*";
       }
         echo "<br>";
       }
