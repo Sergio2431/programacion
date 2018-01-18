@@ -5,6 +5,7 @@
     <title>Paises del Mundo</title>
   </head>
   <body>
-    <?php  ?>
+    <?php
+     ?>
   </body>
 </html>
