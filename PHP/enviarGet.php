@@ -5,6 +5,6 @@
     <title>Envio info</title>
   </head>
   <body>
-    <a href="pruebaurl.php?code=CMR&Continent=Asia">Enviar Datos</a>
+    <a href="pruebaGet.php?code=CMR&Continent=Asia">Enviar Datos</a>
   </body>
 </html>

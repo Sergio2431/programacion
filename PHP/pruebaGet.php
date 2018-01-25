@@ -7,13 +7,13 @@
   <body>
     <?php
       $conector = new mysqli("localhost",
-      "root", "root", "world");
+      "root", "", "world");
       if ($conector->connect_errno) {
         echo "Fallo al conectar a MySQL: " . $conector->connect_errno;
       }else{
-        if(empty($_POST["code"])) echo "VOILA";
-        $code=$_POST["code"];
-        $continente=$_POST["continent"];
+        $code=$_GET["code"];
+        $continente=$_GET["Continent"];
+
         $consulta="SELECT * FROM country WHERE
         Code='$code' AND Continent='$continente'";
         echo "<br>";
