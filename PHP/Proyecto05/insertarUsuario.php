@@ -39,7 +39,7 @@
             <br>
           </tr>
           <br>
-            <form method="get" action="listadoUsuario.php">
+            <form class="" action="listadoUsuario.php" method="post">
               <input type="submit" value="Enviar este formulario" />
             </form>
         </div>
