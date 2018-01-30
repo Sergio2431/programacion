@@ -3,7 +3,7 @@ Autor: Sergio Ruiz Bascuñana
 Actividad: Ahorcado 4.0
 */
 
-var palabras= ["Josep", "tiene", "rabo", "dedos", "centimetros", "empalmado"]
+var palabras= ["amigos", "aprobado", "vida", "social", "ordenador", "raton"]
 
 var numAle= Math.round(Math.random()*(5-0))
 console.log(numAle);
@@ -11,17 +11,10 @@ console.log(numAle);
 var acertar=palabras[numAle];
 console.log(acertar);
 
-var divs = document.getElementsByTagName("div");
-console.log(divs.length);
-for (var i = 0; i < cells.length; i++) {
-  var status = cells[i].getAttribute("data-status");
-  if (status == "open") {
-    //grab the data
-  }
-}
 var barrabaja=8;
 var comp=false;
 var fallo="";
+var entrada=letra;
 
 //contador de fallos
 var intentos=5;
