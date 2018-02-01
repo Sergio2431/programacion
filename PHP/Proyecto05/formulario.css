@@ -1,0 +1,30 @@
+body {
+  font-family: 'Calibri', sans-serif;
+  font-size: 18px;
+  color: #384047;
+}
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px 60px;
+  background: #E9F57F;
+  border-radius: 8px;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+button {
+    padding: 10px 30px 10px 30px;
+    color: #FFF;
+    background-color: #44BCFC;
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 45%;
+    border: 1px solid #44BCFC;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+}
