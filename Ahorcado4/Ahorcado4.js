@@ -23,3 +23,10 @@ if (intentos>cont && barrabaja!=0) {
   letra=entrada.value;
   entrada.value="";
 }
+
+//comprobar si la letra introducida esta en la palabra
+function comprobar(){
+  if(intentos>cont && barrabaja!=0)
+  //pedir letra y comprobamos si esta
+  
+}
