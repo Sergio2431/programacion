@@ -3,7 +3,6 @@ require "lib/Heroes/Superman.php";
 
 $primerHeroe= new Superman();
 $segundoHeroe= new Superman();
-
 $segundoHeroe->restarVida(10);
 ?>
 <!DOCTYPE html>
@@ -14,8 +13,8 @@ $segundoHeroe->restarVida(10);
   </head>
   <body>
     <?php
-    echo "Primer Personaje tiene ". $primerHeroe->getvida()." puntos de vida<br>";
-    echo "Segundo Personaje tiene ". $segundoHeroe->getvida()." puntos de vida";
+    echo "Primer Personaje tiene". $primerHeroe->getvida()." puntos de vida<br>";
+    echo "Segundo Personaje tiene". $primerHeroe->getvida()." puntos de vida";
     ?>
   </body>
 </html>

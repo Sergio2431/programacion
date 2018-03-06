@@ -1,13 +1,13 @@
 <?php
-require_once "lib/Personaje.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "lib/PersonajeEne.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
 
-class Villano extends Personaje
+class JosepJala extends PersonajeEne
 {
   //Vida
-  private $vida=100;
+  private $vida=5;
 
   function_contruct()
   {
@@ -25,5 +25,4 @@ class Villano extends Personaje
     $this->vida=$this->vida-$valorRestar;
   }
 }
-
  ?>

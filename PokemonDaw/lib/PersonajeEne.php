@@ -2,15 +2,16 @@
 /**
  *
  */
-class Personaje
+class PersonajeEne
 {
   //Vida
-  private $vida=100;
+  private $vida=5;
   //Nombre
   private $nombre="";
+  
   function __construct()
   {
-
+    # code...
   }
   //Getters y setters de Vida
   public function setVida($valor){
@@ -31,4 +32,6 @@ class Personaje
     $this->vida=$this->vida-$valorRestar;
   }
 }
+
+
  ?>

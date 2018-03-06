@@ -9,13 +9,14 @@ class Superman extends Personaje
   //Vida
   private $vida=100;
 
-  function_contruct()
+  function __construct()
   {
 
   }
   //Getters y setters de Vida
   public function setVida($valor){
     $this->vida=$valor;
+    return $this->vida;
   }
   public function getVida($valor){
     return $this->vida;
