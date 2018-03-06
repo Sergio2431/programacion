@@ -1,8 +1,8 @@
 <?php
-require "lib/Heroes/Superman.php";
+require "lib/Pokemon/RegiMachop.php";
 
-$primerHeroe= new Superman();
-$segundoHeroe= new Superman();
+$primerHeroe= new RegiMachop();
+$segundoHeroe= new RegiMachop();
 $segundoHeroe->restarVida(10);
 ?>
 <!DOCTYPE html>
