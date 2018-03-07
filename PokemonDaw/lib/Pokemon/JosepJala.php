@@ -1,18 +1,20 @@
 <?php
-require_once "lib/Personajepok.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "lib/Personaje.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
 
-class JosepJala extends PersonajePok
+class JosepJala extends Personaje
 {
   //Vida
-  private $vida=50;
+
+
+  //AtaqueJala
   private $ataqueJala=10;
 
-  function_contruct()
+  function __construct()
   {
-
+    parent::setvida(50);
   }
   //Getters y setters de Vida
   public function setVida($valor){
@@ -31,4 +33,3 @@ class JosepJala extends PersonajePok
     $this->vida=$this->vida-$valorRestar;
   }
 }
- ?>

@@ -1,15 +1,13 @@
 <?php
 require "lib/Pokemon/RegiMachop.php";
+require "lib/Enemigo/JosepJala.php";
 
-<<<<<<< HEAD
-$primerHeroe= new Superman();
-$segundoHeroe= new Superman();
+$primerHeroe= new RegiMachop("Pokemon RegiMachop");
+$segundoHeroe= new JosepJala("Pokemon JosepJala");
 
-=======
-$primerHeroe= new RegiMachop();
-$segundoHeroe= new RegiMachop();
->>>>>>> 0f530981a43586175737cbb5151aa81ea699ab64
+$primerHeroe->sumarVida(500)
 $segundoHeroe->restarVida(10);
+
 ?>
 <!DOCTYPE html>
 <html>

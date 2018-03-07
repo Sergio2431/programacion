@@ -2,16 +2,16 @@
 /**
  *
  */
-class PersonajeEne
+class Personaje
 {
   //Vida
   private $vida=100;
-  //
+  //Escudo
   private $escudo=50;
 
   function __construct()
   {
-    # code...
+
   }
   //Getters y setters de Vida
   public function setVida($valor){
@@ -21,8 +21,8 @@ class PersonajeEne
     return $this->vida;
   }
   //Getters y setters de escudo
-  public function setEscudo($escudo){
-    $this->escudo=$escudo;
+  public function setEscudo($valor){
+    $this->escudo=$valor;
   }
   public function getEscudo(){
     return $this->escudo;
@@ -32,6 +32,3 @@ class PersonajeEne
     $this->vida=$this->vida-$valorRestar;
   }
 }
-
-
- ?>

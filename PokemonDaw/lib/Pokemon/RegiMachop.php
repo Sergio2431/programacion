@@ -1,25 +1,26 @@
 <?php
-require_once "lib/PersonajePok.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "lib/Personaje.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
 
-class JosepJala extends PersonajePok
+class RegiMachop extends Personaje
 {
-  //Vida
-  private $vida=150;
+
+  //Ataques
   private $ataqueFuria=1000;
   private $ataqueQueja=20;
 
-  function_contruct()
+  function __construct()
   {
-
+    //Vida
+    parent::setVida(150);
   }
-  //Getters y setters de Vida
+  //Getters y setters de AtaqueFuria
   public function setAtaqueFuria($valor){
     $this->ataqueFuria=$valor;
   }
-  public function getAtaqueFuria($valor){
+  public function getAtaqueFuria(){
     return $this->vida;
   }
   //Atacar Furia
@@ -35,9 +36,4 @@ class JosepJala extends PersonajePok
   public function atacar(){
     return $this->ataqueQueja;
   }
-  //Restar Vida
-  public function restarVida($valorRestar){
-    $this->vida=$this->vida-$valorRestar;
-  }
 }
- ?>
