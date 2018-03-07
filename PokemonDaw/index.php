@@ -3,6 +3,7 @@ require "lib/Heroes/Superman.php";
 
 $primerHeroe= new Superman();
 $segundoHeroe= new Superman();
+
 $segundoHeroe->restarVida(10);
 ?>
 <!DOCTYPE html>
