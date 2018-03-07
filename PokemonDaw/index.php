@@ -1,12 +1,14 @@
 <?php
-require "lib/Pokemon/RegiMachop.php";
-require "lib/Enemigo/JosepJala.php";
+
+require "./lib/Pokemon/RegiMachop.php";
+require "./lib/Pokemon/JosepJala.php";
 
 $primerHeroe= new RegiMachop("Pokemon RegiMachop");
 $segundoHeroe= new JosepJala("Pokemon JosepJala");
 
-$primerHeroe->sumarVida(500)
+$primerHeroe->restarVida(75);
 $segundoHeroe->restarVida(10);
+
 
 ?>
 <!DOCTYPE html>
@@ -15,10 +17,10 @@ $segundoHeroe->restarVida(10);
     <meta charset="utf-8">
     <title>Uso de Herencia</title>
   </head>
-  <body>
+  <body background-image: url("pokemon.png")>
     <?php
-    echo "Primer Personaje tiene". $primerHeroe->getvida()." puntos de vida<br>";
-    echo "Segundo Personaje tiene". $primerHeroe->getvida()." puntos de vida";
+    echo "RegiMachop tiene ". $primerHeroe->getvida()." puntos de vida<br>";
+    echo "JosepJala tiene ". $segundoHeroe->getvida()." puntos de vida";
     ?>
   </body>
 </html>

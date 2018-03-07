@@ -1,5 +1,5 @@
 <?php
-require_once "lib/Personaje.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "./lib/Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
@@ -24,7 +24,7 @@ class RegiMachop extends Personaje
     return $this->vida;
   }
   //Atacar Furia
-  public function atacar(){
+  public function atacarFuria(){
     $random=rand(0,15);
     if ($random<4) {
       return $this->ataqueFuria;

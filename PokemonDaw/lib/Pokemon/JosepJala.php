@@ -1,13 +1,13 @@
 <?php
-require_once "lib/Personaje.php"  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "./lib/Personaje.php";   /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
 
 class JosepJala extends Personaje
 {
-  //Vida
-
+  //Fortalecer
+  private $defensaChupa=50;
 
   //AtaqueJala
   private $ataqueJala=10;
@@ -16,20 +16,22 @@ class JosepJala extends Personaje
   {
     parent::setvida(50);
   }
-  //Getters y setters de Vida
-  public function setVida($valor){
+  //Getters y setters de defensaChupa
+  public function setdefensaChupa($valor){
     $this->vida=$valor;
   }
-  public function getVida($valor){
+  public function getdefensaChupa($valor){
     return $this->vida;
   }
-
+  //Getters y setters de defensaChupa
+  public function setataqueJala($valor){
+    $this->vida=$valor;
+  }
+  public function getataqueJala($valor){
+    return $this->vida;
+  }
   //atacar
   public function atacar(){
     return $this->ataqueJala;
-  }
-  //Restar Vida
-  public function restarVida($valorRestar){
-    $this->vida=$this->vida-$valorRestar;
   }
 }
