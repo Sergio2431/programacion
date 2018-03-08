@@ -4,7 +4,7 @@ require_once "./lib/Personaje.php";   /*Hacer refencia a la carpeta en la que ha
 *
 */
 
-class JosepJala extends Personaje
+class JosepMetapod extends Personaje
 {
   //Fortalecer
   private $defensaChupa=50;
@@ -17,17 +17,17 @@ class JosepJala extends Personaje
     parent::setvida(50);
   }
   //Getters y setters de defensaChupa
-  public function setdefensaChupa($valor){
-    $this->vida=$valor;
+  public function setDefensaChupa($valor){
+    $this->vida=$valor+$vida;
   }
-  public function getdefensaChupa($valor){
+  public function getDefensaChupa($valor){
     return $this->vida;
   }
-  //Getters y setters de defensaChupa
-  public function setataqueJala($valor){
+  //Getters y setters de ataqueJala
+  public function setAtaqueJala($valor){
     $this->vida=$valor;
   }
-  public function getataqueJala($valor){
+  public function getAtaqueJala($valor){
     return $this->vida;
   }
   //atacar

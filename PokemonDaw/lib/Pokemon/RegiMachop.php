@@ -32,6 +32,13 @@ class RegiMachop extends Personaje
       return 0;
     }
   }
+  //Getters y setters de AtaqueQueja
+  public function setAtaqueQueja($valor){
+    $this->ataqueFuria=$valor;
+  }
+  public function getAtaqueQueja(){
+    return $this->vida;
+}
   //Atacar Queja
   public function atacar(){
     return $this->ataqueQueja;
