@@ -21,7 +21,7 @@ class PabloOnix extends Personaje
     $this->ataqueRepositorio=$valor;
   }
   public function getAtaqueRepositorio(){
-    return $this->vida;
+    return $this->ataqueRepositorio;
   }
   //Atacar Repositorio
   public function atacarRepositorio(){
@@ -37,7 +37,7 @@ class PabloOnix extends Personaje
     $this->ataqueProgramador=$valor;
   }
   public function getAtaqueProgramador(){
-    return $this->vida;
+    return $this->ataqueProgramador;
 }
   //Atacar Programador
   public function atacar(){

@@ -20,15 +20,15 @@ class JosepMetapod extends Personaje
   public function setDefensaChupa($valor){
     $this->vida=$valor+$vida;
   }
-  public function getDefensaChupa($valor){
-    return $this->vida;
+  public function getDefensaChupa(){
+    return $this->defensaChupa;
   }
   //Getters y setters de ataqueJala
   public function setAtaqueJala($valor){
     $this->vida=$valor;
   }
-  public function getAtaqueJala($valor){
-    return $this->vida;
+  public function getAtaqueJala(){
+    return $this->ataqueJala;
   }
   //atacar
   public function atacar(){

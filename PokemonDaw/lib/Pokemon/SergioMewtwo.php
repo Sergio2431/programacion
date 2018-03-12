@@ -21,7 +21,7 @@ class SergioMewtwo extends Personaje
     $this->ataqueMuleta=$valor;
   }
   public function getAtaqueMuleta(){
-    return $this->vida;
+    return $this->ataqueMuleta;
   }
   //Atacar Muleta
   public function atacarMuleta(){
@@ -32,7 +32,7 @@ class SergioMewtwo extends Personaje
     $this->ataquePiernaLoca=$valor;
   }
   public function getAtaquePiernaLoca(){
-    return $this->vida;
+    return $this->ataquePiernaLoca;
   }
   //Atacar PiernaLoca
   public function atacarPiernaLoca(){

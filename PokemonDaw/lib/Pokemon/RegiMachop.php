@@ -21,7 +21,7 @@ class RegiMachop extends Personaje
     $this->ataqueFuria=$valor;
   }
   public function getAtaqueFuria(){
-    return $this->vida;
+    return $this->ataqueFuria;
   }
   //Atacar Furia
   public function atacarFuria(){
@@ -37,7 +37,7 @@ class RegiMachop extends Personaje
     $this->ataqueFuria=$valor;
   }
   public function getAtaqueQueja(){
-    return $this->vida;
+    return $this->ataqueQueja;
 }
   //Atacar Queja
   public function atacar(){
