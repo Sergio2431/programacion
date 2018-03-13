@@ -9,7 +9,7 @@ class Personaje
   //Resitencia
   private $resistencia=50;
   //Agilidad
-  private $agilidad=10
+  private $agilidad=10;
 
   function __construct()
   {

@@ -1,5 +1,5 @@
 <?php
-require_once "./lib/Personaje.php";   /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "../Personaje.php";   /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
