@@ -1,5 +1,5 @@
 <?php
-require " ../Pokemon/JosepMetapod.php";
+require "../Pokemon/JosepMetapod.php";
 
 $JosepMetapod=new JosepMetapod();
 
@@ -38,7 +38,7 @@ $JosepMetapod=new JosepMetapod();
             </tr>
             <tr>
               <td><b>Agilidad</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarDefensa();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarAgilidad();?></span></td>
             </tr>
           </table>
           <br><br>
@@ -46,11 +46,11 @@ $JosepMetapod=new JosepMetapod();
             <h2>Ataques</h2>
             <tr>
               <td><b>Jala</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->ataque1();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->ataqueJala();?></span></td>
             </tr>
             <tr>
               <td><b>Chupa</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->defensa1();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->defensaChupa();?></span></td>
             </tr>
           </table>
         </div>

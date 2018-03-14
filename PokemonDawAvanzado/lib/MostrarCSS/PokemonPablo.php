@@ -38,7 +38,7 @@ $PabloOnix=new PabloOnix();
             </tr>
             <tr>
               <td><b>Agilidad</b></td>
-              <td><span class="label label-default"><?php echo $PabloOnix->mostrarDefensa();?></span></td>
+              <td><span class="label label-default"><?php echo $PabloOnix->mostrarAgilidad();?></span></td>
             </tr>
           </table>
           <br><br>
