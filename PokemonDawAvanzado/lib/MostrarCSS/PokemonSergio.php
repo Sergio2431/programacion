@@ -31,14 +31,14 @@ $SergioMewtwo=new SergioMewtwo();
           <table>
             <h2>Estadisticas Básicas</h2>
             <td><b>Vida</b></td>
-            <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarVida();?></span></td>
+            <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarVidaSergio();?></span></td>
             <tr>
               <td><b>Resistencia</b></td>
-              <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarResistencia();?></span></td>
+              <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarResistenciaSergio();?></span></td>
             </tr>
             <tr>
               <td><b>Agilidad</b></td>
-              <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarAgilidad();?></span></td>
+              <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarAgilidadSergio();?></span></td>
             </tr>
           </table>
           <br><br>
@@ -46,11 +46,11 @@ $SergioMewtwo=new SergioMewtwo();
             <h2>Ataques</h2>
             <tr>
               <td><b>Muleta</b></td>
-              <td><span class="label label-default"><?php echo $SergioMewtwo->ataqueMuleta();?></span></td>
+              <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarAtaqueMuleta();?></span></td>
             </tr>
             <tr>
               <td><b>Pierna Loca</b></td>
-              <td><span class="label label-default"><?php echo $SergioMewtwo->ataquePiernaLoca();?></span></td>
+              <td><span class="label label-default"><?php echo $SergioMewtwo->mostrarAtaquePiernaLoca();?></span></td>
             </tr>
           </table>
         </div>

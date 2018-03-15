@@ -1,5 +1,5 @@
 <?php
-require_once "./lib/Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "../Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
@@ -16,7 +16,7 @@ class PabloOnix extends Personaje
     //Vida
     parent::setVida(250);
     parent::setresistencia(20);
-    parent::setagilidad(2S);
+    parent::setagilidad(25);
   }
   //Getters y setters de AtaqueRepositorio
   public function setAtaqueRepositorio($valor){
@@ -43,6 +43,21 @@ class PabloOnix extends Personaje
 }
   //Atacar Programador
   public function atacar(){
+    return $this->ataqueProgramador;
+  }
+  function mostrarVidaPablo(){
+    return parent::getVida();
+  }
+  function mostrarResistenciaPablo(){
+    return parent::getResistencia();
+  }
+  function mostrarAgilidadPablo(){
+    return parent::getAgilidad();
+  }
+  function mostrarAtaqueRepositorio(){
+    return $this->ataqueRepositorio;
+  }
+  function mostrarAtaqueProgramador(){
     return $this->ataqueProgramador;
   }
 }

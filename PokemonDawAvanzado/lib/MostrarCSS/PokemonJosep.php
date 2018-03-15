@@ -31,14 +31,14 @@ $JosepMetapod=new JosepMetapod();
           <table>
             <h2>Estadisticas Básicas</h2>
             <td><b>Vida</b></td>
-            <td><span class="label label-default"><?php echo $JosepMetapod->mostrarVida();?></span></td>
+            <td><span class="label label-default"><?php echo $JosepMetapod->mostrarVidaJosep();?></span></td>
             <tr>
               <td><b>Resistencia</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarResistencia();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarResistenciaJosep();?></span></td>
             </tr>
             <tr>
               <td><b>Agilidad</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarAgilidad();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarAgilidadJosep();?></span></td>
             </tr>
           </table>
           <br><br>
@@ -46,11 +46,11 @@ $JosepMetapod=new JosepMetapod();
             <h2>Ataques</h2>
             <tr>
               <td><b>Jala</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->ataqueJala();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarAtaqueJala();?></span></td>
             </tr>
             <tr>
               <td><b>Chupa</b></td>
-              <td><span class="label label-default"><?php echo $JosepMetapod->defensaChupa();?></span></td>
+              <td><span class="label label-default"><?php echo $JosepMetapod->mostrarDefensaChupa();?></span></td>
             </tr>
           </table>
         </div>

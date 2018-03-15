@@ -1,5 +1,5 @@
 <?php
-require " ../Pokemon/PabloOnix.php";
+require "../Pokemon/PabloOnix.php";
 
 $PabloOnix=new PabloOnix();
 
@@ -31,14 +31,14 @@ $PabloOnix=new PabloOnix();
           <table>
             <h2>Estadisticas Básicas</h2>
             <td><b>Vida</b></td>
-            <td><span class="label label-default"><?php echo $PabloOnix->mostrarVida();?></span></td>
+            <td><span class="label label-default"><?php echo $PabloOnix->mostrarVidaPablo();?></span></td>
             <tr>
               <td><b>Resistencia</b></td>
-              <td><span class="label label-default"><?php echo $PabloOnix->mostrarResistencia();?></span></td>
+              <td><span class="label label-default"><?php echo $PabloOnix->mostrarResistenciaPablo();?></span></td>
             </tr>
             <tr>
               <td><b>Agilidad</b></td>
-              <td><span class="label label-default"><?php echo $PabloOnix->mostrarAgilidad();?></span></td>
+              <td><span class="label label-default"><?php echo $PabloOnix->mostrarAgilidadPablo();?></span></td>
             </tr>
           </table>
           <br><br>
@@ -46,11 +46,11 @@ $PabloOnix=new PabloOnix();
             <h2>Ataques</h2>
             <tr>
               <td><b>Repositorio</b></td>
-              <td><span class="label label-default"><?php echo $PabloOnix->ataqueRepositorio();?></span></td>
+              <td><span class="label label-default"><?php echo $PabloOnix->mostrarAtaqueRepositorio();?></span></td>
             </tr>
             <tr>
               <td><b>Programador</b></td>
-              <td><span class="label label-default"><?php echo $PabloOnix->ataqueProgramador();?></span></td>
+              <td><span class="label label-default"><?php echo $PabloOnix->mostrarAtaqueProgramador();?></span></td>
             </tr>
           </table>
         </div>

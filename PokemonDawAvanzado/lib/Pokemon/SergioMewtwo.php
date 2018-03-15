@@ -1,5 +1,5 @@
 <?php
-require_once "./lib/Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "../Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
@@ -38,6 +38,21 @@ class SergioMewtwo extends Personaje
   }
   //Atacar PiernaLoca
   public function atacarPiernaLoca(){
+    return $this->ataquePiernaLoca;
+  }
+  function mostrarVidaSergio(){
+    return parent::getVida();
+  }
+  function mostrarResistenciaSergio(){
+    return parent::getResistencia();
+  }
+  function mostrarAgilidadSergio(){
+    return parent::getAgilidad();
+  }
+  function mostrarAtaqueMuleta(){
+    return $this->ataqueMuleta;
+  }
+  function mostrarAtaquePiernaLoca(){
     return $this->ataquePiernaLoca;
   }
 }

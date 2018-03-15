@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #DAA520;
 }
 li {
     float: left;
@@ -34,9 +34,9 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover:not(.active) {
-  background-color: #121;
+li a:hover:not(.active) {  /*Color del pokemon cuando colocamos el puntero encima de su pestaña*/
+  background-color: #FFD700;
 }
-.active {
-    background-color: #4CAF50;
+.active {  /*Color de la pestaña del pokemon seleccionado*/
+    background-color: #FF0000;
 }

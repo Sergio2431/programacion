@@ -1,5 +1,5 @@
 <?php
-require_once "./lib/Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
+require_once "../Personaje.php";  /*Hacer refencia a la carpeta en la que hacer referencia*/
 /**
 *
 */
@@ -43,6 +43,21 @@ class RegiMachop extends Personaje
 }
   //Atacar Queja
   public function atacar(){
+    return $this->ataqueQueja;
+  }
+  function mostrarVidaRegi(){
+    return parent::getVida();
+  }
+  function mostrarResistenciaRegi(){
+    return parent::getResistencia();
+  }
+  function mostrarAgilidadRegi(){
+    return parent::getAgilidad();
+  }
+  function mostrarAtaqueFuria(){
+    return $this->ataqueFuria;
+  }
+  function mostrarAtaqueQueja(){
     return $this->ataqueQueja;
   }
 }

@@ -31,14 +31,14 @@ $RegiMachop=new RegiMachop();
           <table>
             <h2>Estadisticas Básicas</h2>
             <td><b>Vida</b></td>
-            <td><span class="label label-default"><?php echo $RegiMachop->mostrarVida();?></span></td>
+            <td><span class="label label-default"><?php echo $RegiMachop->mostrarVidaRegi();?></span></td>
             <tr>
               <td><b>Resistencia</b></td>
-              <td><span class="label label-default"><?php echo $RegiMachop->mostrarResistencia();?></span></td>
+              <td><span class="label label-default"><?php echo $RegiMachop->mostrarResistenciaRegi();?></span></td>
             </tr>
             <tr>
               <td><b>Agilidad</b></td>
-              <td><span class="label label-default"><?php echo $RegiMachop->mostrarAgilidad();?></span></td>
+              <td><span class="label label-default"><?php echo $RegiMachop->mostrarAgilidadRegi();?></span></td>
             </tr>
           </table>
           <br><br>
@@ -46,11 +46,11 @@ $RegiMachop=new RegiMachop();
             <h2>Ataques</h2>
             <tr>
               <td><b>Furia</b></td>
-              <td><span class="label label-default"><?php echo $RegiMachop->ataqueFuria();?></span></td>
+              <td><span class="label label-default"><?php echo $RegiMachop->mostrarAtaqueFuria();?></span></td>
             </tr>
             <tr>
               <td><b>Queja</b></td>
-              <td><span class="label label-default"><?php echo $RegiMachop->ataqueQueja();?></span></td>
+              <td><span class="label label-default"><?php echo $RegiMachop->mostrarAtaqueQueja();?></span></td>
             </tr>
           </table>
         </div>

@@ -16,22 +16,22 @@ class Personaje
 
   }
   //Getters y setters de Vida
-  public function setVida($valor){
-    $this->vida=$valor;
+  public function setVida($vida){
+    $this->vida=$vida;
   }
   public function getVida(){
     return $this->vida;
   }
   //Getters y setters de escudo
-  public function setResistencia($valor){
-    $this->resistencia=$valor;
+  public function setResistencia($resistencia){
+    $this->resistencia=$resistencia;
   }
   public function getResistencia(){
     return $this->resistencia;
   }
   //Getters y setters de escudo
-  public function setAgilidad($valor){
-    $this->agilidad=$valor;
+  public function setAgilidad($agilidad){
+    $this->agilidad=$agilidad;
   }
   public function getAgilidad(){
     return $this->agilidad;

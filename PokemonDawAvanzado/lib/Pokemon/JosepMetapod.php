@@ -14,20 +14,20 @@ class JosepMetapod extends Personaje
 
   function __construct()
   {
-    parent::setvida(50);
-    parent::setresistencia(10);
-    parent::setagilidad(5);
+    parent::setVida(50);
+    parent::setResistencia(10);
+    parent::setAgilidad(5);
   }
   //Getters y setters de defensaChupa
-  public function setDefensaChupa($valor){
-    $this->vida=$valor+$vida;
+  public function setDefensaChupa($defensaChupa){
+    $this->vida=$defensaChupa+$vida;
   }
   public function getDefensaChupa(){
     return $this->defensaChupa;
   }
   //Getters y setters de ataqueJala
-  public function setAtaqueJala($valor){
-    $this->vida=$valor;
+  public function setAtaqueJala($ataqueJala){
+    $this->vida=$vida-$ataqueJala;
   }
   public function getAtaqueJala(){
     return $this->ataqueJala;
@@ -35,5 +35,20 @@ class JosepMetapod extends Personaje
   //atacar
   public function atacar(){
     return $this->ataqueJala;
+  }
+  function mostrarVidaJosep(){
+    return parent::getVida();
+  }
+  function mostrarResistenciaJosep(){
+    return parent::getResistencia();
+  }
+  function mostrarAgilidadJosep(){
+    return parent::getAgilidad();
+  }
+  function mostrarAtaqueJala(){
+    return $this->ataqueJala;
+  }
+  function mostrarDefensaChupa(){
+    return $this->defensaChupa;
   }
 }
