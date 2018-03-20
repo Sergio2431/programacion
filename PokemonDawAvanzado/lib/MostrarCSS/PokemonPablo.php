@@ -17,10 +17,10 @@ $PabloOnix=new PabloOnix();
       $pantalla="PabloOnix";
     ?>
     <ul id="barra">
-      <li><a class="<?php if ($pantalla=="JosepMetapod") echo "active";?>" href="JosepMetapod.php">JosepMetapod</a></li>
-      <li><a class="<?php if ($pantalla=="RegiMachop") echo "active";?>" href="RegiMachop.php">RegiMachop</a></li>
-      <li><a class="<?php if ($pantalla=="PabloOnix") echo "active";?>" href="PabloOnix.php">PabloOnix</a></li>
-      <li><a class="<?php if ($pantalla=="SergioMewtwo") echo "active";?>" href="SergioMewtwo.php">SergioMewtwo</a></li>
+      <li><a class="<?php if ($pantalla=="JosepMetapod") echo "active";?>" href="PokemonJosep.php">JosepMetapod</a></li>
+      <li><a class="<?php if ($pantalla=="RegiMachop") echo "active";?>" href="PokemonRegi.php">RegiMachop</a></li>
+      <li><a class="<?php if ($pantalla=="PabloOnix") echo "active";?>" href="PokemonPablo.php">PabloOnix</a></li>
+      <li><a class="<?php if ($pantalla=="SergioMewtwo") echo "active";?>" href="PokemonSergio.php">SergioMewtwo</a></li>
     </ul>
     <center>
       <form class="header" action="PabloOnix.php" method="post">

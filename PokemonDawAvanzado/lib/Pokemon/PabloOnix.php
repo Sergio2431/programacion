@@ -16,7 +16,7 @@ class PabloOnix extends Personaje
     //Vida
     parent::setVida(250);
     parent::setresistencia(20);
-    parent::setagilidad(25);
+    parent::setagilidad(5);
   }
   //Getters y setters de AtaqueRepositorio
   public function setAtaqueRepositorio($valor){
