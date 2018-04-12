@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Insertar Usuario</title>
+    <title>Actualizar Usuario</title>
     <link rel="stylesheet" type="text/css" href="Formulario.css">
   </head>
   <body>
@@ -10,15 +10,15 @@
       $pantalla="Lista";
     ?>
     <ul id="barra">
-      <li><a class="<?php if ($pantalla=="Crear") echo "active";?>" href="insertarUsuario.php">Crear Usuario</a></li>
-      <li><a class="<?php if ($pantalla=="Actualizar") echo "active";?>" href="actualizarUsuario.php">Actualizar Usuario</a></li>
-      <li><a class="<?php if ($pantalla=="Eliminar") echo "active";?>" href="eliminarUsuario.php">Eliminar Usuario</a></li>
-      <li><a class="<?php if ($pantalla=="Lista") echo "active";?>" href="listadoUsuario.php">Lista de Usuarios</a></li>
+    <li><a class="<?php if ($pantalla=="Crear") echo "active";?>" href="insertarUsuario.php">Crear Usuario</a></li>
+    <li><a class="<?php if ($pantalla=="Actualizar") echo "active";?>" href="actualizarUsuario.php">Actualizar Usuario</a></li>
+    <li><a class="<?php if ($pantalla=="Eliminar") echo "active";?>" href="eliminarUsuario.php">Eliminar Usuario</a></li>
+    <li><a class="<?php if ($pantalla=="Lista") echo "active";?>" href="listadoUsuario.php">Lista de Usuarios</a></li>
     </ul>
     <center>
-      <form class="header" action="insertarUsuario1.php" method="post">
+      <form class="header" action="actualizarUsuario.php" method="post">
         <div id="Registro">
-          <h1>Registro de Usuarios</h1>
+          <h1>Actualizar Usuarios</h1>
           <div class="columna1">
             <tr>
               <td>Nombre</td>
@@ -38,10 +38,10 @@
             </tr>
             <tr>
               <br><td>Puntuación</td>
-              <td><input type="text" size="20" maxlength="80" name="Puntuacion" placeholder="Introduce la puntuación"></td><br>
+              <td><input type="text" size="20" maxlength="80" name="Puntuación" placeholder="Introduce la puntuación"></td><br>
             </tr>
           </div>
-            <br><button type="submit">Registrarse</button>
+            <br><button type="submit">Actualizar</button>
             <button type="reset">Restablecer</button>
         </div>
       </form>

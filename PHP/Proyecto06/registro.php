@@ -1,6 +1,6 @@
 <?php
 //codigo php que conecta con la base de datos
-  $conector = new mysqli("localhost","root","","programacion(5)");
+  $conector = new mysqli("localhost","root","","");
   if ($conector->connect_errno){
     echo "Fallo al conectar a MySQL: " . $conector->connect_error;
   }else {
