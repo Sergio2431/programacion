@@ -30,29 +30,29 @@
                       if ($conector->connect_errno){
                         echo "Fallo al conectar a MySQL: " . $conector->connect_error;
                       }else {
-                        $conesulta=$conector->query('SELECT nombre FROM usuario');
-                      ?>
-                      <ol id="lista2">
-                        <?php
-                        foreach ($consulta as $fila) {
+                        $consulta=$conector->query('SELECT nombre FROM usuario');
                         ?>
-                          <option>
-                            <?php
-                              echo $fila["nombre"]."<br>";
+                        <ol id="lista2">
+                          <?php
+                          foreach ($consulta as $fila) {
+                          ?>
+                            <option>
+                              <?php
+                                echo $fila["nombre"]."<br>";
                               ?>
                             </option>
                             <?php
                             }
                             ?>
-                      </ol>
-                      <?php
+                        </ol>
+                        <?php
                       }
-                      ?>
+                    ?>
                   </select>
                 </td>
               </tr>
             </table>
-            <tr>
+            <tr><br>
               <td>Nombre</td>
               <td><input type="text" size="20" maxlength="80" name="Nombre" placeholder="Nombre del usuario"></td><br>
             </tr>
