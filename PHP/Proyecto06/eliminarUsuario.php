@@ -20,7 +20,38 @@
         <div id="Registro">
           <h1>Eliminar Usuarios</h1>
           <div class="columna1">
-            
+            <table>
+            <tr>
+              <td><b>Usuario</b></td>
+              <td>
+                <select id="seleccionar_usuario" name="seleccionar_usuario">
+                  <?php
+                    $conector = new mysqli("localhost","root","","programacion1");
+                    if ($conector->connect_errno){
+                      echo "Fallo al conectar a MySQL: " . $conector->connect_error;
+                    }else {
+                      $consulta=$conector->query('SELECT nombre FROM usuario');
+                      ?>
+                      <ol id="lista2" name="UsuarioEliminar">
+                        <?php
+                        foreach ($consulta as $fila) {
+                        ?>
+                          <option>
+                            <?php
+                              echo $fila["nombre"]."<br>";
+                            ?>
+                          </option>
+                            <?php
+                            }
+                            ?>
+                      </ol>
+                      <?php
+                      }
+                      ?>
+                  </select>
+                </td>
+              </tr>
+            </table>
           </div>
             <br><button type="submit">Eliminar</button>
             <button type="reset">Restablecer</button>

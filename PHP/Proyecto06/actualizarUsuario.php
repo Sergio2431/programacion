@@ -16,10 +16,42 @@
     <li><a class="<?php if ($pantalla=="Lista") echo "active";?>" href="listadoUsuario.php">Lista de Usuarios</a></li>
     </ul>
     <center>
-      <form class="header" action="actualizarUsuario.php" method="post">
+      <form class="header" action="actualizarUsuario1.php" method="post">
         <div id="Registro">
           <h1>Actualizar Usuarios</h1>
           <div class="columna1">
+            <table>
+              <tr>
+                <td><b>Usuario</b></td>
+                <td>
+                  <select id="seleccionar_usuario" name="seleccionar_usuario">
+                    <?php
+                      $conector = new mysqli("localhost","root","","programacion1");
+                      if ($conector->connect_errno){
+                        echo "Fallo al conectar a MySQL: " . $conector->connect_error;
+                      }else {
+                        $conesulta=$conector->query('SELECT nombre FROM usuario');
+                      ?>
+                      <ol id="lista2">
+                        <?php
+                        foreach ($consulta as $fila) {
+                        ?>
+                          <option>
+                            <?php
+                              echo $fila["nombre"]."<br>";
+                              ?>
+                            </option>
+                            <?php
+                            }
+                            ?>
+                      </ol>
+                      <?php
+                      }
+                      ?>
+                  </select>
+                </td>
+              </tr>
+            </table>
             <tr>
               <td>Nombre</td>
               <td><input type="text" size="20" maxlength="80" name="Nombre" placeholder="Nombre del usuario"></td><br>
