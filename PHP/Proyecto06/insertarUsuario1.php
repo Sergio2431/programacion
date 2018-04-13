@@ -14,8 +14,8 @@ if ($conector->connect_errno){
   <h3>No se han llenado todos los campos <br> <a href='insertarUsuario.php'>Volver a la página de registro</a></h3>
   </center>");
   //añadir la info a la base de datos
-  $conector->query("INSERT INTO usuario VALUES ('','$nombre','$apellidos','$edad','$curso','$puntuacion')") or die("<h3>Error de envio</h3>");
+  $conector->query("INSERT INTO usuario VALUES ('','$nombre','$apellidos','$edad','$curso','$puntuacion')");
   echo '<h2>Registro completo</h2>';
 }
-header('Location: insertarUsuario.php');
+header('Location: listadoUsuario.php');
 ?>
