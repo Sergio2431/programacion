@@ -30,7 +30,7 @@
                     if ($conector->connect_errno){
                       echo "Fallo al conectar a MySQL: " . $conector->connect_error;
                     }else {
-                      $consulta=$conector->query('SELECT nombre FROM usuario');
+                      $consulta=$conector->query('SELECT DNI FROM usuario');
                       ?>
                       <ol id="lista2" name="UsuarioEliminar">
                         <?php
@@ -38,7 +38,7 @@
                         ?>
                           <option>
                             <?php
-                              echo $fila["nombre"]."<br>";
+                              echo $fila["DNI"]."<br>";
                             ?>
                           </option>
                             <?php
