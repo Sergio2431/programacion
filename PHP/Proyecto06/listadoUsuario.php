@@ -33,7 +33,7 @@
                    ?>
                     <li>
                       <?php
-                        echo "USUARIO: ". $fila["nombre"]." ". $fila["apellidos"]." ". $fila["edad"]." años ". "Curso: ".$fila["curso"]."<br>";
+                        echo "USUARIO-> ". $fila["nombre"]." ". $fila["apellidos"]."  DNI: ". $fila["DNI"]."  Edad: ". $fila["edad"]."  años ". "  Curso: ".$fila["curso"]. "  Puntuacion: ".$fila["puntuacion"]."<br>";
                       ?>
                     </li>
                     <?php

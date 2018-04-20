@@ -29,6 +29,10 @@
               <td><input type="text" size="20" maxlength="80" name="Apellidos" placeholder="Apellidos del usuario"/></td><br>
             </tr>
             <tr>
+              <br><td>DNI</td>
+              <td><input type="text" size="20" maxlength="80" name="DNI" placeholder="DNI del usuario"/></td><br>
+            </tr>
+            <tr>
               <br><td>Edad</td>
               <td><input type="text" size="20" maxlength="80" name="Edad" placeholder="Introduce la edad"></td><br>
             </tr>

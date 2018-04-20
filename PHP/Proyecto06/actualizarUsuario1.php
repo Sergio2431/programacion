@@ -14,8 +14,8 @@ if ($conector->connect_errno) {
   //actualizar la información del Usuario
   echo "usuario_update ".$usuario_update."nombre ".$nombre. " apellidos ".$apellidos. " edad ".$edad. " curso ".$curso. " puntuacion ".$puntuacion;
 
-  $conector->query("UPDATE usuario SET nombre='$nombre', apellidos='$apellidos', edad='$edad', curso='$curso', puntuacion='$puntuacion' WHERE nombre='$usuario_update'");
+  $conector->query("UPDATE usuario SET nombre='$nombre', apellidos='$apellidos', edad='$edad', curso='$curso', puntuacion='$puntuacion' WHERE DNI='$usuario_update'");
 
   }
-  header('Location: actualizarUsuario.php');
+  header('Location: listadoUsuario.php');
  ?>
