@@ -11,9 +11,9 @@
     $edad=$_POST['Edad'];
     $curso=$_POST['Curso'];
     $puntuacion=$_POST['Puntuacion'];
-    //comprobar que todos los campos de han llenado
-    $llenado=(strlen($nombre)*strlen($apellidos)*strlen($edad)*strlen($curso)*strlen($puntuacion)) or die("<center>
-    <h3>No se han llenado todos los campos <br> <a href='login.php'>Volver a la página de registro</a></h3>
+    //comprobar que todos los campos se han llenado
+    $llenado=(strlen($nombre)*strlen($apellidos)*strlen($DNI)*strlen($edad)*strlen($curso)*strlen($puntuacion)) or die("<center>
+    <h3>No se han llenado todos los campos <br> <a href='insertarUsuario.php'>Volver a la página de registro</a></h3>
     </center>");
     //añadir la info a la base de datos
     $conector->query("INSERT INTO usuario VALUES ('$nombre','$apellidos','$edad','$curso','$puntuacion')") or die("<h3>Error de envio</h3>");
