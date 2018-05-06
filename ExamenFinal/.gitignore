@@ -1,4 +1,4 @@
-﻿/vendor/
+/vendor/
 /log/*
 !log/.gitkeep
 composer.lock

@@ -1,54 +1,50 @@
+<?php
+require_once __DIR__.'/../vendor/autoload.php';
+use Daw\models\Usuario;
+
+$baseDatos=new Usuario();
+$baseDatos->conectar();
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Insertar Usuario</title>
-    <link rel="stylesheet" type="text/css" href="Formulario.css">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/formulario.css">
   </head>
   <body>
-    <?php
-      $pantalla="Lista";
-    ?>
-    <ul id="barra">
-      <li><a class="<?php if ($pantalla=="Crear") echo "active";?>" href="insertarUsuario.php">Crear Usuario</a></li>
-      <li><a class="<?php if ($pantalla=="Actualizar") echo "active";?>" href="actualizarUsuario.php">Actualizar Usuario</a></li>
-      <li><a class="<?php if ($pantalla=="Eliminar") echo "active";?>" href="eliminarUsuario.php">Eliminar Usuario</a></li>
-      <li><a class="<?php if ($pantalla=="Lista") echo "active";?>" href="listadoUsuario.php">Lista de Usuarios</a></li>
-    </ul>
-    <center>
-      <form class="header" action="insertarUsuario1.php" method="post">
-        <div id="Registro">
-          <h1>Registro de Usuarios</h1>
-          <div class="columna1">
-            <tr>
-              <td>Nombre</td>
-              <td><input type="text" size="20" maxlength="80" name="Nombre" placeholder="Nombre del usuario"></td><br>
-            </tr>
-            <tr>
-              <br><td>Apellidos</td>
-              <td><input type="text" size="20" maxlength="80" name="Apellidos" placeholder="Apellidos del usuario"/></td><br>
-            </tr>
-            <tr>
-              <br><td>DNI</td>
-              <td><input type="text" size="20" maxlength="80" name="DNI" placeholder="DNI del usuario"/></td><br>
-            </tr>
-            <tr>
-              <br><td>Edad</td>
-              <td><input type="text" size="20" maxlength="80" name="Edad" placeholder="Introduce la edad"></td><br>
-            </tr>
-            <tr>
-              <br><td>Curso</td>
-              <td><input type="text" size="20" maxlength="80" name="Curso" placeholder="Introduce el curso"></td><br>
-            </tr>
-            <tr>
-              <br><td>Puntuación</td>
-              <td><input type="text" size="20" maxlength="80" name="Puntuacion" placeholder="Introduce la puntuación"></td><br>
-            </tr>
-          </div>
-            <br><button type="submit">Registrarse</button>
-            <button type="reset">Restablecer</button>
-        </div>
-      </form>
-    </center>
+    <h1>CREAR PERFIL</h1>
+    <form method="post" action="listadoUsuarios.php" onsubmit="espaciosVacios()">
+      <fieldset class="caja">
+        <legend>¿QUIEN ERES?</legend>
+        <p>Nombre <b>*</b><br>
+        <input type="text" name="nombre" value="" placeholder="Introduce tu nombre" required></p>
+        <p>Apellidos <br>
+          <input type="text" name="apellidos" value="" placeholder="Introduce tus apellidos"></p>
+        <p>Año de nacimiento: <br>
+        <input type="text" name="edad" placeholder="Introduce tu año de nacimiento"></p>
+        <p>Curso <br>
+          <select name="curso" placeholder="Introduce tu curso">
+            <option value="">--Selecciona uno--</option>
+            <option value="2daw">2º DAW</option>
+            <option value="1daw">1º DAW</option>
+            <option value="bachiller">Bachiller</option>
+            <option value="eso">ESO</option>
+            <option value="primaria">Primaria</option>
+          </select></p>
+      </fieldset>
+      <fieldset class="caja">
+        <legend>¿CÓMO QUIERES INICIAR SESIÓN?</legend>
+        <p>Nombre de usuario <b>*</b><br>
+          <input type="text" name="usuario" value="" placeholder="Introduce tu usuario" required></p>
+        <p>Contraseña <br>
+          <input type="password" name="contrasenya" value="" placeholder="Introduce tu contraseña"></p>
+        <p>Repite la contraseña <br>
+          <input type="password" name="contrasenya2" value="" placeholder="Introduce tu contraseña"></p>
+      </fieldset>
+      <input type="submit" name="crear" value="Crear cuenta">
+    </form>
+    <button type="button" name="button" onclick="location.href='listadoUsuarios-ex.php'">Volver</button>
+    <script type="text/javascript" src="js/comprobarInsertar.js" charset="utf-8"></script>
   </body>
 </html>

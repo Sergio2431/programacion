@@ -1,5 +1,5 @@
 {
-	"name": "sergio/composer",
+	"name": "sergio2431/composer",
 	"require": {
 		"monolog/monolog": ">=1.23"
 	},
