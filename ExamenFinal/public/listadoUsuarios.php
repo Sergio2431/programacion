@@ -3,7 +3,6 @@ require_once __DIR__.'/../vendor/autoload.php';
 use Daw\models\Usuario;
 
 $baseDatos=new Usuario();
-$baseDatos->conectar();
 
 if (isset($_POST["crear"])){
   $baseDatos->insertarUsuario($_POST['nombre'],$_POST['apellidos'],$_POST['edad'],$_POST['curso'],$_POST['usuario'],$_POST['contrasenya']);
@@ -36,9 +35,6 @@ if (isset($_POST["modificar"])){
             ?>
           </select>
           <input type="submit" value="Empezar"></input>
-          <!--onclick="form.action = 'ahorcado.php'; return true;"
-          <input type="submit" value="Modificar" onclick="form.action = 'actualizarUsuario.php'; return true;"></input>
-          <input type="submit" value="Borrar" onclick="form.action = 'borrarUsuario.php'; return true;"></input>-->
         </form>
       </fielset>
     <br><br>

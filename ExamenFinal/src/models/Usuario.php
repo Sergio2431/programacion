@@ -49,9 +49,8 @@ class Usuario extends Db
     }
 
     public function insertarUsuario($nombre,$apellidos,$edad,$curso,$usuario,$contrasenya){
-        $pass=hash("haval160,4", $contrasenya);
         $insertar="insert into usuarios (nombre,apellidos,edad,curso,usuario,contrasenya) values
-    ('".$nombre."','".$apellidos."','".$edad."','".$curso."','".$usuario."','".$pass."')";
+    ('".$nombre."','".$apellidos."','".$edad."','".$curso."','".$usuario."','".$contrasenya."')";
         //echo $insertar;
         $registro = parent::consultar($insertar);
     }

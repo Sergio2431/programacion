@@ -44,7 +44,7 @@ $baseDatos->conectar();
       </fieldset>
       <input type="submit" name="crear" value="Crear cuenta">
     </form>
-    <button type="button" name="button" onclick="location.href='listadoUsuarios-ex.php'">Volver</button>
+    <button type="button" name="button" onclick="location.href='listadoUsuarios.php'">Volver</button>
     <script type="text/javascript" src="js/comprobarInsertar.js" charset="utf-8"></script>
   </body>
 </html>
