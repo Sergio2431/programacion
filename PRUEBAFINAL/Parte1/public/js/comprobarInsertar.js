@@ -1,34 +1,20 @@
 function espaciosVacios() {
 
   var nombre = document.getElementById('nombre').value;
-  var apellidos = document.getElementById('apellido').value;
-  var edad = document.getElementById('edad').value;
-  var curso = document.getElementById('curso').value;
-  var usuario = document.getElementById('usuario').value;
+  var participantes = document.getElementById('participantes').value;
 
   if (nombre.length == 0) {
-    alert("Error,  rellena el campo nombre");
+    alert("Rellene por favor todos los campos");
     return false;
   }
 
-  if (apellidos.length == 0) {
-    alert("Error, rellena el campo apellidos");
+  if (participantes.length == 0) {
+    alert("Rellene por favor todos los campos");
     return false;
   }
 
-  if (edad.length == 0) {
-    alert("Error, rellena el campo edad");
+  if ((participantes > 5) || (participantes <1)) {
+    alert("El numero de participantes debe estar entre 1 y 5");
     return false;
   }
-
-  if (curso.length == 0) {
-    alert("Error, rellena el campo curso");
-    return false;
-  }
-
-  if (usuario.length == 0) {
-    alert("Error, rellena el campo usuario");
-    return false;
-  }
-
 }
